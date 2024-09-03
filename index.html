@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://fav.farm/🎶" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script
+      src="https://kit.fontawesome.com/958582e863.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Page</title>
+  </head>
+
+  <body>
+    <!-- Header starts here -->
+    <header class="header">
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>     
+
+      <nav class="navbar">
+        <ul class="nav-list closed">
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <a href="./projects.html" target="_blank">Projects</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="toggle-btn dark-mode" aria-label="toggle dark mode">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+        <span class="ball"></span>
+      </div>
+    </header>
+
+    <!-- Main content starts here -->
+    <main class="main">
+      <h1 class="title">Hi, I am Vera and I love to code...</h1>
+      <section class="about-me">
+        <figure class="about-me__image">
+          <img class="profile-image" src="./images/Vera.jpg"  alt="Vera's profile picture" />
+        </figure>        
+        <article class="about-me__text">
+          <h2 class="subtitle">
+            I am a self-taught junior web developer, passionate about technology and web design.
+          </h2>
+          <p>I took courses on freeCodeCamp and followed countless online courses and tutorials.</p>
+        </article>
+      </section>
+
+      <section class="skills">
+        <h2 class="subtitle">Skills</h2>
+        <ol class="skills-list">
+          <li>
+            <i class="fa-brands fa-html5"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-css3"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-js"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-sass"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-react"></i>
+          </li>
+          <li>
+            <i class="fa-brands fa-git"></i>
+          </li>
+        </ol>
+        </section>
+
+        <section class="projects">
+          <h2 class="subtitle">Projects</h2>
+          <select class="projects-list" id="projects-list">
+            <option value="" selected>Select a project</option>
+            <option value="https://verakissyou17.github.io/Random-quote-machine/">
+               Random Quote Machine           
+            </option>
+            <option value="https://verakissyou17.github.io/myPlayer/">
+                My Player
+            </option>
+            <option value="https://verakissyou17.github.io/time-tracking-dashboard-main/#">
+                Time Tracking Dashboard
+            </option>
+            <option value="https://verakissyou17.github.io/age-calculator-app-main/">
+              Age Calculator App
+          </option>
+          </select>
+        </section>
+    </main>
+
+    
+
+    <footer id="contact" class="footer">
+      <div class="form-container">
+        <form
+          class="my-form"
+          id="myForm"
+          name="myForm"
+          action="https://formsubmit.co/e64bcd0dbb1a1a3474b99359a85ad110"
+          method="POST"
+        >
+          <h2>Contact me</h2>
+          <div class="inputBox">
+            <input id="name" name="name" type="text" required />
+            <label for="name">Name</label>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <input id="email" name="email" type="email" required />
+            <label for="email">Email Address</label>
+            <i></i>
+          </div>
+          <div class="inputBox">
+            <textarea id="textarea" name="message" type="text"></textarea>
+            <label for="textarea">Message</label>
+            <i></i>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="footer-icons">
+        <a href="http://wa.me/754430834" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://github.com/Verakissyou17" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>  
+        <a href="https://www.linkedin.com/in/verakissyou17/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
