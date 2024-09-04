@@ -337,7 +337,7 @@ img {
   position: relative;
   width: 100%;
   max-width: 400px;
-  height: 20em;
+  height: 22em;
   border-radius: 10px;
   overflow: hidden;
   z-index: 1;
@@ -439,6 +439,7 @@ img {
 }
 
 .inputBox input:valid ~ label,
+.inputBox textarea:valid ~ label,
 .inputBox input:focus ~ label,
 .inputBox textarea:focus ~ label {
   font-size: 0.75rem;
