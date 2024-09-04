@@ -427,7 +427,7 @@ img {
   position: absolute;
   left: 0;
   padding: 0.5em 0.7em;
-  color: var(--white);
+  color: var(--dark-lilac);
   font-size: 0.8rem;
   font-weight: bold;
   letter-spacing: 0.05em;
@@ -436,6 +436,10 @@ img {
 
 .inputBox label.dark-mode {
   color: var(--teal);
+}
+
+.inputBox textarea ~ label {
+  left: 15px;
 }
 
 .inputBox input:valid ~ label,
