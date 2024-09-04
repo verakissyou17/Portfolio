@@ -56,6 +56,7 @@ img {
   align-items: center;
   gap: 2rem;
   background-color: var(--white);
+  transition: background-color 0.5s ease;
 }
 
 .header.dark-mode {
