@@ -302,6 +302,7 @@ img {
 
 .projects-list {
   width: 100%;
+  max-width: 200px;
   border: 3px dotted var(--dark-lilac);
   background: linear-gradient(
     to bottom right,
