@@ -11,7 +11,7 @@ const myForm = document.getElementById('myForm');
 const labels = document.querySelectorAll('.inputBox label');
 const aboutMe = document.querySelector('.about-me__text');
 const projectsList = document.getElementById('projects-list');
-console.log(projectsList);
+
 
 
 function darkTheme() {
@@ -70,9 +70,36 @@ hamburger.addEventListener('click', () => {
 
 projectsList.addEventListener('change', function () {
     let userOption = this.options[this.selectedIndex];
-    if(userOption.value!== "") {
+    if(userOption.value !== "") {
         window.open(userOption.value, '_blank', '');
     }
 });
 
+const contactName = document.getElementById('name');
+const contactEmail = document.getElementById('email');
+const contactMessage = document.getElementById('textarea');
 
+myForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let ebody = `    
+    <b>Name: ${contactName.value}</b>
+    <br>
+    <b>Email: ${contactEmail.value}</b>
+    <br>
+    <b>Message: ${contactMessage.value}</b>
+    <br>`;
+
+    Email.send({
+        SecureToken : "f9ae98a3-10df-44b5-8735-be6c45de6a83",
+        To : 'veronicaciuca17@gmail.com',
+        From : "veronicaciuca17@gmail.com",
+        Subject :`From:  ${contactEmail.value}`,
+        Body : ebody
+    }).then((message) => {
+        document.querySelector('.message').innerHTML = `${message}! Message sent successfully!`;
+        contactName.value = '';
+        contactEmail.value = '';
+        contactMessage.value = '';
+    });
+});
