@@ -30,7 +30,7 @@ body {
   display: grid;
   grid-template-columns: auto-fit;
   grid-auto-rows: min-content;
-  row-gap: 5em;
+  row-gap: 2em;
   padding: 1em;
   min-height: 100vh;
   transition: background-color 0.5s ease-in;
@@ -50,6 +50,7 @@ body.dark-mode {
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 1em;
   background-color: var(--white);
   transition: background-color 0.5s ease-in;
 }
@@ -180,18 +181,53 @@ body.dark-mode {
   grid-row: 2 / 3;
   padding: 1em;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
   gap: 3rem;
 }
 
+.title {
+  font-size: clamp(2rem, 0.944rem + 4.507vw, 5rem);
+  background-image: linear-gradient(
+    -225deg,
+    var(--teal) 0%,
+    var(--magenta) 30%,
+    var(--black) 70%,
+    var(--light-blue) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 5s linear infinite;
+  transition: all 5s ease;
+  text-align: center;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
 .main-article {
+  max-width: 400px;
+  margin: 1em auto;
   background: var(--dark-gray);
-  max-width: 350px;
   padding: 2rem;
   border-radius: 1rem;
-  margin: 2em auto;
   font-family: inherit;
   font-size: 1.5rem;
   color: var(--teal);
@@ -272,20 +308,15 @@ body.dark-mode {
   opacity: 0.5;
 }
 
-.function {
-  color: var(--yellow);
+footer p {
+  color: var(--light-blue);
+  text-align: center;
+  font-size: 0.8rem;
 }
 
-.keyword {
-  color: var(--purple);
+@media screen and (min-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
-.punctuation {
-  color: var(--yellow);
-}
-
-.func {
-  color: var(--purple);
-} 
-
 
