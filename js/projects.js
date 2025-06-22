@@ -9,6 +9,10 @@ const toggleBtn = document.querySelector('.toggle-btn');
 const ball = document.querySelector('.ball');
 const labels = document.querySelectorAll('.inputBox label');
 
+const currentYear = new Date().getFullYear();
+const yearElement = document.getElementById('year');
+yearElement.textContent = currentYear;
+
 function darkTheme() {
     document.body.classList.add('dark-mode');
     header.classList.add('dark-mode');
@@ -72,9 +76,7 @@ hamburger.addEventListener('click', () => {
             const middleY = window.innerHeight / 2;
 
             const offsetX = ((x - middleX) / middleX) * 45;
-            const offsetY = ((y - middleY) / middleY) * 45;
-
-            console.log(offsetX, offsetY);
+            const offsetY = ((y - middleY) / middleY) * 45;;
 
             elem.style.setProperty("--rotateX", -1 * offsetY + "deg");
             elem.style.setProperty("--rotateY", offsetX + "deg");

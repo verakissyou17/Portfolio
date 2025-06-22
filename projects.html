@@ -3,23 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vera's portfolio - Junior web developer passionate about technology, web design, and coding projects."
+    />
+    <meta
+      name="keywords"
+      content="Vera, web developer, portfolio, HTML, CSS, JavaScript, React, projects, coding, technology"
+    />
+    <meta name="author" content="Vera" />
+    <meta property="og:title" content="Vera's Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore Vera's web development projects, skills, and contact information."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/Vera.jpg" />
+    <meta property="og:url" content="https://verakissyou17.github.io/" />
     <link rel="stylesheet" href="./css/projects.css" />
     <script
       src="https://kit.fontawesome.com/958582e863.js"
       crossorigin="anonymous"
     ></script>
     <title>Projects</title>
-  </head> 
-  
+  </head>
+
   <body>
     <!-- Header starts here -->
     <header class="header">
-
       <div class="hamburger">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
-      </div>     
+      </div>
 
       <nav class="navbar">
         <ul class="nav-list closed">
@@ -32,7 +48,7 @@
         </ul>
       </nav>
 
-      <div class="toggle-btn dark-mode" aria-label="toggle dark mode">
+      <div class="toggle-btn dark-mode">
         <i class="fa-solid fa-sun"></i>
         <i class="fa-solid fa-moon"></i>
         <span class="ball"></span>
@@ -43,41 +59,101 @@
       <h1 class="title">Projects</h1>
       <div class="container">
         <article class="main-article">
-          <h1 class="article-title">My Player</h1>
+          <h2 class="article-title">My Player</h2>
           <p>
-            My Player is a simple music player web application made with HTML, CSS, and JavaScript. It features a playlist, play/pause buttons, forward and backward buttons and a small list of my favorite songs.
+            My Player is a simple music player web application made with HTML,
+            CSS, and JavaScript. It features a playlist, play/pause buttons,
+            forward and backward buttons and a small list of my favorite songs.
           </p>
-          <a href="https://verakissyou17.github.io/myPlayer/" class="article-link" target="_blank">View Project</a>
+          <a
+            href="https://verakissyou17.github.io/myPlayer/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
         </article>
-  
+
         <article class="main-article">
-          <h1 class="article-title">Random Quote Machine</h1>
+          <h2 class="article-title">Random Quote Machine</h2>
           <p>
-            Random Quote Machine is a simple web application that generates random quotes from a given array of quotes. It displays the quote, author and 2 buttons to share the quote.
+            Random Quote Machine is a simple web application that generates
+            random quotes from a given array of quotes. It displays the quote,
+            author and 2 buttons to share the quote.
           </p>
-          <a href="https://verakissyou17.github.io/random-quote-generator/" class="article-link" target="_blank">View Project</a>
+          <a
+            href="https://verakissyou17.github.io/random-quote-generator/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
         </article>
-  
+
         <article class="main-article">
-          <h1 class="article-title">Time Tracking Dashboard</h1>
+          <h2 class="article-title">Time Tracking Dashboard</h2>
           <p>
             Time Tracking Dashboard is a small project made on Frontend Mentor
-            that allows users to track their time spent on various tasks and display a summary of their progress.
+            that allows users to track their time spent on various tasks and
+            display a summary of their progress.
           </p>
-          <a href="https://verakissyou17.github.io/time-tracking-dashboard-main/" class="article-link" target="_blank">View Project</a>
+          <a
+            href="https://verakissyou17.github.io/time-tracking-dashboard-main/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
         </article>
         <article class="main-article">
-          <h1 class="article-title">Amazon Project</h1>
+          <h2 class="article-title">Amazon Project</h2>
           <p>
-            Amazon Project is a simple web application that allows users to search for products, add them to their cart and checkout. It uses the OpenSearch API to fetch product data and track the orders made by customers.
+            Amazon Project is a simple web application that allows users to
+            search for products, add them to their cart and checkout. It uses
+            the OpenSearch API to fetch product data and track the orders made
+            by customers.
           </p>
-          <a href="https://verakissyou17.github.io/javascript-amazon-project-main/" class="article-link" target="_blank">View Project</a>
+          <a
+            href="https://verakissyou17.github.io/javascript-amazon-project-main/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
+        </article>
+
+        <article class="main-article">
+          <h2 class="article-title">Smoking Tracking App</h2>
+          <p>
+            Smoking Tracking App is a simple web application that allows users
+            to track their smoking habits, set goals and view their progress. It
+            features a simple interface with a form to add new entries to
+            display the data and calculate their savings.
+          </p>
+          <a
+            href="https://verakissyou17.github.io/smoking-tracking-app/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
+        </article>
+
+        <article class="main-article">
+          <h2 class="article-title">Mortgage Repayment Calculator</h2>
+          <p>
+            Mortgage Repayment Calculator is a simple web application that
+            allows users to calculate their mortgage repayments based on the
+            loan amount, interest rate and loan term. It features a form to
+            input the data and display the results.
+          </p>
+          <a
+            href="https://verakissyou17.github.io/mortgage-repayment-calculator-main/"
+            class="article-link"
+            target="_blank"
+            >View Project</a
+          >
         </article>
       </div>
     </main>
 
     <footer>
-      <p>&copy; 2024  Portfolio by Veronica Ciuca</p>
+      <p>&copy; <span id="year"></span> Portfolio by Veronica Ciuca</p>
     </footer>
 
     <script src="./js/projects.js"></script>
