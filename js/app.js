@@ -11,7 +11,7 @@ const labels = document.querySelectorAll(".inputBox label");
 const aboutMe = document.querySelector(".about-me__text");
 const projectsList = document.getElementById("projects-list");
 const subtitles = document.querySelectorAll(".subtitle");
-console.log(subtitles)
+
 
 function darkTheme() {
   document.body.classList.add("dark-mode");
